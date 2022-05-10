@@ -118,11 +118,23 @@ describe("Test multiply function", () => {
     const [a, b] = [4, 2];
 
     // act
-    const result = Calculator.divideNumber(a, b);
+    const result = Calculator.multiplyNumber(a, b);
 
     // assert
 
     expect(result).toBe(8);
+  });
+
+  test("multiplying 2 numbers, it should return 0 if any variable is 0", () => {
+    // arrange
+    const [a, b] = [0, 2];
+
+    // act
+    const result = Calculator.multiplyNumber(a, b);
+
+    // assert
+
+    expect(result).toBe(0);
   });
 
   test("if the first paramter is not a number it should throw error", () => {
@@ -133,7 +145,7 @@ describe("Test multiply function", () => {
 
     // assert
 
-    expect(() => Calculator.divideNumber(a, b)).toThrow(Error);
+    expect(() => Calculator.subtractNumber(a, b)).toThrow(Error);
   });
   test("if the first paramter is not a number it should throw error", () => {
     // arrange
@@ -141,14 +153,8 @@ describe("Test multiply function", () => {
 
     // assert
 
-    expect(() => Calculator.divideNumber(a, b)).toThrow(Error);
+    expect(() => Calculator.multiplyNumber(a, b)).toThrow(Error);
   });
   
-  test("it should throw error if the divisor is 0",() => {
-    const [a, b] = [2, 0];
-
-    // assert
-
-    expect(() => Calculator.divideNumber(a, b)).toThrow(Error);
-  })
+  
 });
