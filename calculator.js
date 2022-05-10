@@ -21,6 +21,17 @@ class Calculator {
   }
 
   static divideNumber(a,b) {
+    if(isNaN(a)) {
+      throw new Error("a is not a numbr")
+    }
+    else if(isNaN(b)) {
+      throw new Error("b is not a numbr")
+
+    }
+    else if(b === 0) {
+      throw new Error("cannot divide by 0 ")
+
+    }
     return a /b;
   }
 
