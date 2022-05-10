@@ -1,3 +1,5 @@
+
+const capitalize = require("./capitalize.js")
 it("should return string with first char capitalized",()=> {
   //arrange
   const word = "yousef"
