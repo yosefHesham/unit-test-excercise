@@ -4,7 +4,6 @@
  */
  const stringLength = (value) => {
     if(value.length < 1) {
-      console.log("less than 1")
       throw new Error("String is less than 1")
     }
     else if(value.length > 10) {
