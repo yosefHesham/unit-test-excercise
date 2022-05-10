@@ -1,0 +1,24 @@
+{
+  "name": "unit-test-excercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "test": "jest --watchAll"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosefHesham/unit-test-excercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yosefHesham/unit-test-excercise/issues"
+  },
+  "homepage": "https://github.com/yosefHesham/unit-test-excercise#readme",
+  "dependencies": {
+    "jest": "^28.1.0"
+  }
+}
