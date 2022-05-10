@@ -110,3 +110,45 @@ describe("Test divide function", () => {
     expect(() => Calculator.divideNumber(a, b)).toThrow(Error);
   })
 });
+
+
+describe("Test multiply function", () => {
+  test("multiplying 2 numbers, it should return 8", () => {
+    // arrange
+    const [a, b] = [4, 2];
+
+    // act
+    const result = Calculator.divideNumber(a, b);
+
+    // assert
+
+    expect(result).toBe(8);
+  });
+
+  test("if the first paramter is not a number it should throw error", () => {
+    // arrange
+    const [a, b] = ["x", 2];
+
+    // act
+
+    // assert
+
+    expect(() => Calculator.divideNumber(a, b)).toThrow(Error);
+  });
+  test("if the first paramter is not a number it should throw error", () => {
+    // arrange
+    const [a, b] = [2, "x"];
+
+    // assert
+
+    expect(() => Calculator.divideNumber(a, b)).toThrow(Error);
+  });
+  
+  test("it should throw error if the divisor is 0",() => {
+    const [a, b] = [2, 0];
+
+    // assert
+
+    expect(() => Calculator.divideNumber(a, b)).toThrow(Error);
+  })
+});

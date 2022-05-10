@@ -43,10 +43,7 @@ class Calculator {
       throw new Error("b is not a numbr")
 
     }
-    else if(b === 0) {
-      throw new Error("cannot divide by 0 ")
-
-    }
+   
     return a * b;
   }
 }
